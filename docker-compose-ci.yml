@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  darwin-circle-matcher:
+    image: ${DOCKER_REGISTRY_URL}/darwin-circle-matcher:builder
+    volumes:
+      - .:/home/application
+      - /data/sonar:/root/.sonar
+    working_dir: /home/application
+    command: ["/home/application/run-ci.sh"]
