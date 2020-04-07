@@ -46,7 +46,7 @@ The response would be:
 ```
 Then, simply use the circle identification information for any service call in your cluster. To do this, use the HTTP header **X-Circle-Id** with the value of **circles.id**.
 
-To installation instructions [see](https://docs.charlescd.io/usando-o-charles/instalacao-do-charles).
+Installation instructions [here](https://docs.charlescd.io/usando-o-charles/instalacao-do-charles).
 
 See the CharlesCD [documentation](https://docs.charlescd.io) for more information.
 
