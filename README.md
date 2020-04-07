@@ -31,7 +31,7 @@ X-Application-Id: CHARLESCD_WORKSPACE_ID
 
 ```
 
-The response would be:
+The response could be:
 
 ```
 {
