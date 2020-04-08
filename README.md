@@ -7,13 +7,12 @@
 
 This repository is part of [CharlesCD](https://github.com/ZupIT/charlescd) project.
 
-Circle Matcher is a HTTP service that allows us to identify which logical segmentation rules the application user (managed by CharlesCD) belongs to.
+Circle Matcher is an HTTP service that allows us to identify which segmentation (managed by CharlesCD) the application user belongs to, based on logical rules previously defined.
 
 ## How it works
-With CharlesCD it is possible to deploy your application, defining which user segment (circle) it belongs to. Routing takes place at the service mesh level, so every request for the cluster - managed by CharlesCD - needs segment information (circle id) for it to work properly.
+Through CharlesCD, it is possible to deploy different versions of your applications and define which user segmentation (Circle) is going to access it. Routing takes place at the service mesh level, so every request that happens in the cluster - managed by CharlesCD - needs a segment identification (Circle's id) to work properly.
 
-Circle Matcher is a service that receives a JSON (without a specific contract) with the user's attributes (
-any attribute that matters) and returns the identifier of the circle to which it belongs.
+Circle Matcher is a service that receives a JSON (without a specific contract) with the user's attributes (any attribute that matters) and returns the identifier of the circle to which it belongs.
 
 See an sample request:
 
@@ -49,4 +48,3 @@ Then, simply use the circle identification information for any service call in y
 Installation instructions [here](https://docs.charlescd.io/usando-o-charles/instalacao-do-charles).
 
 See the CharlesCD [documentation](https://docs.charlescd.io) for more information.
-
